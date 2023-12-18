@@ -1,0 +1,16 @@
+// Aprobación de Examen:Solicita al usuario ingresar su puntuación en un examen. Utiliza SweetAlert2 para indicar si ha aprobado o no, considerando una puntuación mínima para pasar de 3.0.
+let examen = prompt ("Ingresa tu puntuación en el examen: ");
+
+if (examen>=3.0){
+    Swal.fire({
+        title:'¡Bienvenido!',
+        text:'Aprobaste el examen',
+        icon:'Success'
+    });
+} else {
+    Swal.fire({
+        title:'¡Bienvenido!',
+        text:'No aprobaste el examen',
+        icon:'Error'
+    });
+}

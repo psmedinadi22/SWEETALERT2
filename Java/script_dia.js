@@ -2,61 +2,65 @@
 let dia = prompt ("Ingresa un día de la semana: ");
 
 switch (dia) { 
-    case "Lunes":
+    case ("Lunes" || "1" || "LUNES" || "Monday" || "Lunes"):
         Swal.fire({
             title:'¡Bienvenido!',
             text:'Hoy es Lunes',
             icon:'Success'
         });
         break;          
-    case "Martes":
+    case ("Martes" || "2" || "MARTES" || "Tuesday" || "Martes"):
         Swal.fire({
             title:'¡Bienvenido!',
             text:'Hoy es Martes',
             icon:'Success'
         });
-        break;
-    case "Miércoles":
+        break;  
+    case ("Miércoles" || "3" || "MIÉRCOLES" || "Wednesday" || "Miércoles"):         
+
         Swal.fire({
             title:'¡Bienvenido!',
             text:'Hoy es Miércoles',
             icon:'Success'
         });
         break;
-    case "Jueves":  
+    case ("Jueves" || "4" || "JUEVES" || "Thursday" || "Jueves"):
         Swal.fire({
             title:'¡Bienvenido!',
             text:'Hoy es Jueves',
             icon:'Success'
         });
-        break;  
-
-    case "Viernes": 
+        break;
+    case ("Viernes" || "5" || "VIERNES" || "Friday" || "Viernes"):  
         Swal.fire({
             title:'¡Bienvenido!',
             text:'Hoy es Viernes',
             icon:'Success'
         });
         break;
-    case "Sábado":
+    case ("Sábado" || "6" || "SÁBADO" || "Saturday" || "Sábado"):       
         Swal.fire({
             title:'¡Bienvenido!',
             text:'Hoy es Sábado',
             icon:'Success'
         });
         break;
-    case "Domingo": 
+    case ("Domingo" || "7" || "DOMINGO" || "Sunday" || "Domingo"):
         Swal.fire({
             title:'¡Bienvenido!',
             text:'Hoy es Domingo',
             icon:'Success'
         });
         break;
-    default:
-            Swal.fire({
-                title:'¡Bienvenido!',
-                text:'No es un día de la semana',
-                icon:'Success'
-            });
-            break;
+    default:    
+        Swal.fire({
+            title:'¡Bienvenido!',
+            text:'No ingresaste un día de la semana',
+            icon:'Error'
+        });
+        break;
 }
+
+
+
+
